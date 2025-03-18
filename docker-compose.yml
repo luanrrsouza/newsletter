@@ -1,0 +1,10 @@
+services:
+  postgresql:
+    image: postgres
+    container_name: newsletter
+    environment:
+      POSTGRES_USER: luanr
+      POSTGRES_PASSWORD: 2444
+      POSTGRES_DB: newsletter
+    ports:
+      - "3000:5432"
